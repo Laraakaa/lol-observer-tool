@@ -14,20 +14,43 @@
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="100" />
                             <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="Auto" />
-                            <ColumnDefinition Width="100" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
                     </Grid>
                 </ItemsPanelTemplate>
             </StatusBar.ItemsPanel>
+            
             <StatusBarItem Grid.Column="0">
                 <TextBlock Name="lblConnectionStatus">Offline</TextBlock>
             </StatusBarItem>
+            
             <Separator Grid.Column="1" />
+            
             <StatusBarItem Grid.Column="2">
+                <TextBlock Name="lblProfile">
+                    Profile: None
+                </TextBlock>
+            </StatusBarItem>
+
+            <Separator Grid.Column="3" />
+            <StatusBarItem Grid.Column="4">
+                <TextBlock Name="lblController">
+                    Controller: Not connected
+                </TextBlock>
+            </StatusBarItem>
+
+            <Separator Grid.Column="5" />
+            
+            <StatusBarItem Grid.Column="6">
                 <TextBlock Name="lblVersion" />
             </StatusBarItem>
+
         </StatusBar>
     </Grid>
 </UserControl>

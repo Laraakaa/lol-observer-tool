@@ -9,7 +9,8 @@
     <Grid>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="_File">
-                <MenuItem Header="_Exit" />
+                <MenuItem Header="_Exit" Click="MenuItem_Exit_Click" />
+                <MenuItem Header="_Settings" Click="MenuItem_Settings_Click" />
             </MenuItem>
             <MenuItem Header="_Profile">
                 <MenuItem Header="_Load" />

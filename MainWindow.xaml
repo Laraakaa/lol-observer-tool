@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:LoL_Observer_Tool"
         xmlns:status="clr-namespace:LoL_Observer_Tool.Status"
         mc:Ignorable="d"
-        Title="LoL Observer Tool" Height="450" Width="800">
+        Title="LoL Observer Tool" Height="450" Width="800"
+        Background="{DynamicResource BackgroundBrush}" Foreground="{DynamicResource TextBrush}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20" />

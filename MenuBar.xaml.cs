@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LoL_Observer_Tool.Settings;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,16 @@ namespace LoL_Observer_Tool
         public MenuBar()
         {
             InitializeComponent();
+        }
+
+        private void MenuItem_Settings_Click(object sender, RoutedEventArgs e)
+        {
+            new SettingsWindow().Show();
+        }
+
+        private void MenuItem_Exit_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown(0);
         }
     }
 }
